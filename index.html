@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>           
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo"
+            src="images/coffee logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="text-align-center"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#home"> home <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#review">Review</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#blogs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  blogs
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#raw-products">Raw products<a></li>
+                  <li><a class="dropdown-item" href="#health-benefits">Health Benefits</a></li>
+                  <li><a class="dropdown-item" href="#packaging">Packaging</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
+              </li>
+            </ul>
+            <div class="m-auto"></div>
+            <form class="search-form d-flex" role="search">
+              <input class="form-control me-1" type="search" placeholder="Search here..." aria-label="Search">
+              <button class="fas fa-search" type="submit" id="search-btn"></button>
+            </form>
+            <div class="cart-logo mx-3">
+              <a href="#cart-logo"><i class="fa fa-shopping-cart" aria-hidden="true" id="cart"></i></a>
+            </div>
+            <div class="sign-up" id="sign-up">
+              <button class="sign-btn"><i class="fa-solid fa-user-tie"></i></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="home" id="home">
+        <div id="carouselExampleCaptions" class="carousel slide p-0 w-100">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption">
+                <h5>From our plantation <span class="cup-of-coffee"> to your Cup</span></h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, natus. Enjoy a <span>50%</span> discount when you <span><a href="#sign-up"> sign up</a></span> to our shop's website.</p>
+                <p><a href="#" class="btn btn-primary mt-3">
+                  Get Yours now
+                </a></p>
+              </div>
+              <video src="images/Cup Of Coffee - 3158.mp4" class="d-block w-100" alt="..." autoplay loop muted>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <h5><span class="cup-of-coffee">Experience love at first sip</span> every morning</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur quo consequatur totam consequuntur. Hic, adipisci.</p>
+                <p><a href="#" class="btn btn-primary mt-3">Get Yours now</a></p>
+              </div>
+              <video src="images/cup and milk.mp4" class="d-block w-100" alt="..." autoplay loop muted>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <h5><span class="cup-of-coffee">Alaskan made, </span> santa approved!</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur quo consequatur totam consequuntur. Hic, adipisci.</p>
+                <p><a href="#" class="btn btn-primary mt-3">Get yours now</a></p>
+              </div>
+              <video src="images/Hot beverage and steam outdoors - Free Stock Video.mp4" class="d-block w-100" alt="..." autoplay loop muted>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      
+      <div class="arrow-down col-md-12 ">
+        <a href="#about"><span class="arrow fas fa-angle-double-down" ></span></a>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <h1 class="heading">want to know more <span>about us?</span> <img src="images/coffee bean design.png" alt="coffee bean design"></h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/coffee beans cup.jpg">
+        </div>
+
+        <div class="content">
+          <h3>what makes our coffee special?</h3>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ex quam suscipit nihil vel assumenda veniam ad dolores in debitis autem, cumque earum voluptate fuga?</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia adipisci, in ab hic quaerat, tempora esse quos doloremque tenetur soluta iste maiores, excepturi magnam accusamus minus corporis autem sunt!</p>
+          <a href="#" class="btn btn-secondary ml-10"><i class="binoculars fa-solid fa-binoculars"></i> Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h1 class="heading">our <span>menu</span> </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/menu.png" alt="">
+          <h3>tasty and healthy</h3>
+          <div class="price">$15.99<span>20.99</span></div>
+          <a href="#" class="cart-btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu-2.png" alt="">
+          <h3>tasty and healthy</h3>
+          <div class="price">$11.99<span>16.99</span></div>
+          <a href="#" class="cart-btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu-3.png" alt="">
+          <h3>tasty and healthy</h3>
+          <div class="price">$16.99<span>21.99</span></div>
+          <a href="#" class="cart-btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu-4.png" alt="">
+          <h3>tasty and healthy</h3>
+          <div class="price">$15.99<span>20.99</span></div>
+          <a href="#" class="cart-btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu-5.png" alt="">
+          <h3>tasty and healthy</h3>
+          <div class="price">$10.99<span>20.99</span></div>
+          <a href="#" class="cart-btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu-6.png" alt="">
+          <h3>tasty and healthy</h3>
+          <div class="price">$13.99<span>16.99</span></div>
+          <a href="#" class="cart-btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu-3.png" alt="">
+          <h3>tasty and healthy</h3>
+          <div class="price">$13.99<span>16.99</span></div>
+          <a href="#" class="cart-btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu-1.png" alt="">
+          <h3>tasty and healthy</h3>
+          <div class="price">$13.99<span>16.99</span></div>
+          <a href="#" class="cart-btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu-6.png" alt="">
+          <h3>tasty and healthy</h3>
+          <div class="price">$13.99<span>16.99</span></div>
+          <a href="#" class="cart-btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <img src="images/menu.png" alt="">
+          <h3>tasty and healthy</h3>
+          <div class="price">$13.99<span>16.99</span></div>
+          <a href="#" class="cart-btn">add to cart</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h1 class="heading"> our <span>products</span> </h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="images/product-1.png" alt="">
+          </div>
+          <div class="content">
+            <h3>Nicaragua coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$15.99 <span>$20.99</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="images/product-2.png" alt="">
+          </div>
+          <div class="content">
+            <h3>Colombian coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <div class="price">$15.99 <span>$20.99</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="images/product-3.png" alt="">
+          </div>
+          <div class="content">
+            <h3>fresh Peru coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <div class="price">$15.99 <span>$20.99</span></div>
+          </div>
+        </div>
+      </div>    
+    </section>
+
+    <section class="review" id="review">
+      <h1 class="heading"> customer's <span>review</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/quote-img.png" alt="" class="quote">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Corrupti inventore ad numquam mollitia laborum eveniet odio 
+          ducimus veritatis atque unde? Fugiat quas aliquam quod aliquid laborum aut numquam non error?</p>
+          <img src="images/pic-1.png" class="user" alt="">
+          <h3>Alex Hamilton</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="images/quote-img.png" alt="" class="quote">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Corrupti inventore ad numquam mollitia laborum eveniet odio 
+          ducimus veritatis atque unde? Fugiat quas aliquam quod aliquid laborum aut numquam non error?</p>
+          <img src="images/pic-2.png" class="user" alt="">
+          <h3>Mary Jane</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="images/quote-img.png" alt="" class="quote">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Corrupti inventore ad numquam mollitia laborum eveniet odio 
+          ducimus veritatis atque unde? Fugiat quas aliquam quod aliquid laborum aut numquam non error?</p>
+          <img src="images/pic-3.png" class="user" alt="">
+          <h3>john smith</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+      </div>   
+    </section>
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading">our <span>blogs</span></h1>
+      <div class="box-container">
+        <div class="box" id="raw-products">
+          <div class="image">
+            <video src="images/Roasting Coffee Beans and smoke - Free HD Video Clips & Stock Video Footage at Videezy!.mp4" alt="" autoplay loop muted></video>
+          </div>
+          <div class="content">
+            <a href="#" class="title">Steaming coffee beans</a>
+            <span>by Gibbs / 1st January, 2023</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, fuga!</p>
+            <a href="#" class="btn btn-primary">read more <i class="fa-solid fa-book-open-reader"></i></a>
+          </div>
+        </div>
+
+        <div class="box" id="raw-products">
+          <div class="image">
+            <video src="images/coffee beans.mp4" alt="" autoplay loop muted></video>
+          </div>
+          <div class="content">
+            <a href="#" class="title">Dried Coffee beans</a>
+            <span>by gibbs / 2nd January, 2023</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, fuga! </p>
+            <a href="#" class="btn btn-primary">read more <i class="fa-solid fa-book-open-reader"></i></a>
+          </div>
+        </div>
+
+        <div class="box" id="raw-products">
+          <div class="image">
+            <video src="images/Coffee - 4947.mp4" alt="" autoplay loop muted></video>
+          </div>
+          <div class="content">
+            <a href="#" class="title">tasty and refreshing coffee</a>
+            <span>by gibbs / 3rd January, 2023</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, fuga!</p>
+            <a href="#" class="btn btn-primary">read more <i class="fa-solid fa-book-open-reader"></i></a>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <section class="section-1">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="pray" id="health-benefits">
+              <img src="images/coffee health benefits.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="panel text-left">
+              <h1>Health Benefits of Our Coffee</h1>
+              <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad aliquam praesentium cumque vitae magni magnam quae? Cum dolore, officiis vel amet reiciendis eos quasi repudiandae totam ea in nulla.</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati amet rerum assumenda excepturi blanditiis dolorum, ipsum sapiente esse nulla tenetur fuga explicabo possimus sed facere numquam illum quibusdam voluptas, vitae harum, deleniti placeat est modi delectus! Velit obcaecati sint aut?</p>
+              <p><a href="#">Read more... <i class="fa fa-coffee" aria-hidden="true"></i></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="heading"> <span>contact</span> us</h1>
+      <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.514142888269!2d-0.24333265030222664!3d5.638479195892547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9948fac30719%3A0x28150c4463c0d554!2sAchimota%20Mall!5e0!3m2!1sen!2sgh!4v1671446173981!5m2!1sen!2sgh"></iframe>
+        <form action="">
+          <h3>get in touch </h3>
+          <div class="inputbox">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="name">
+          </div>
+          <div class="inputbox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="email">
+          </div>
+          <div class="inputbox">
+            <span class="fas fa-phone"></span>
+            <input type="number" placeholder="number">
+          </div>
+          <input type="submit" value="contact now" class="btn btn-primary">
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid p-0">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <img src="images/dropping coffee.png" alt="">
+          </div>
+        </div>
+        <div class="row text-left">
+          <div class="col-md-5 col-md-5">
+            <img src="images/coffee logo.png" class="logo" alt="logo">
+            <p class="text pt-3">Better Beans, Better Coffee, Better Planet !</p>
+            <p class="copy pt-2">Copyright © 2023 All rights reserved | Created by <span class="Gibbs">Gibbs</span>
+            </p>
+          </div>
+          <div class="footer-link col-md-3">
+            <h5 class="pt-2">Page Links</h5>
+            <ul>
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#menu">menu</a></li>
+              <li><a href="#product">product</a></li>
+              <li><a href="#review">review</a></li>
+              <li><a href="#blogs">blogs</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-link col-md-2">
+            <h5 class="pt-2">Plantation</h5>
+            <ul>
+              <li><a href="#raw-products">Raw products</a></li>
+              <li><a href="#processing">Processing</a></li>
+              <li><a href="#health-benefits">health benefits</a></li>
+              <li><a href="#packaging">Packaging</a></li>
+            </ul>
+          </div>
+          <div class="footer-social col-md-2 col-sm-12">
+            <h4 class="pt-2">Follow Us</h4>
+            <p>Let us be social</p>
+            <div class="column">
+              <i class="fab fa-facebook f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-tiktok"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--------smooth scroll------>
+    <script src="smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>
